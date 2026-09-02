@@ -1,0 +1,1625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#0b1020"
+    >
+
+    <meta
+        name="description"
+        content="Shubham Ludo - A premium Ludo game"
+    >
+
+    <title>Shubham Ludo 🎲</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+<body>
+
+<!-- =====================================================
+     APP
+===================================================== -->
+
+<div id="app">
+
+    <!-- =================================================
+         HOME SCREEN
+    ================================================== -->
+
+    <section
+        id="homeScreen"
+        class="screen"
+    >
+
+        <!-- TOP BAR -->
+
+        <header class="topbar">
+
+            <div class="brand">
+
+                <div class="brand-logo">
+                    🎲
+                </div>
+
+                <div>
+                    <h1>SHUBHAM</h1>
+                    <span>LUDO</span>
+                </div>
+
+            </div>
+
+
+            <div class="top-actions">
+
+                <button
+                    id="soundButton"
+                    class="icon-button"
+                    aria-label="Sound"
+                >
+                    🔊
+                </button>
+
+                <button
+                    id="themeButton"
+                    class="icon-button"
+                    aria-label="Theme"
+                >
+                    🌙
+                </button>
+
+                <button
+                    id="settingsButton"
+                    class="icon-button"
+                    aria-label="Settings"
+                >
+                    ⚙️
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <!-- HERO -->
+
+        <main class="home-content">
+
+            <div class="hero">
+
+                <div class="hero-text">
+
+                    <div class="mini-label">
+                        🎮 PREMIUM LUDO EXPERIENCE
+                    </div>
+
+                    <h2>
+                        Roll.
+                        <span>Race.</span>
+                        Win.
+                    </h2>
+
+                    <p>
+                        Welcome to Shubham Ludo —
+                        a modern Ludo experience with
+                        smart gameplay, smooth animations,
+                        sounds and powerful game modes.
+                    </p>
+
+                </div>
+
+
+                <!-- DICE VISUAL -->
+
+                <div class="hero-dice">
+
+                    <div
+                        id="heroDice"
+                        class="big-dice"
+                    >
+                        🎲
+                    </div>
+
+                    <div class="dice-shadow"></div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PLAY MODES -->
+
+            <section class="mode-section">
+
+                <div class="section-title">
+
+                    <div>
+                        <span>CHOOSE YOUR BATTLE</span>
+                        <h3>Game Modes</h3>
+                    </div>
+
+                </div>
+
+
+                <div class="mode-grid">
+
+
+                    <!-- COMPUTER -->
+
+                    <button
+                        class="mode-card"
+                        data-mode="computer"
+                    >
+
+                        <div class="mode-icon computer-icon">
+                            🤖
+                        </div>
+
+                        <div class="mode-info">
+
+                            <h4>
+                                VS SHUBHAM
+                            </h4>
+
+                            <p>
+                                You vs Computer
+                            </p>
+
+                            <small>
+                                HARD MODE
+                            </small>
+
+                        </div>
+
+                        <div class="mode-arrow">
+                            →
+                        </div>
+
+                    </button>
+
+
+                    <!-- 2 PLAYER -->
+
+                    <button
+                        class="mode-card"
+                        data-mode="2"
+                    >
+
+                        <div class="mode-icon">
+                            👥
+                        </div>
+
+                        <div class="mode-info">
+
+                            <h4>
+                                2 PLAYERS
+                            </h4>
+
+                            <p>
+                                Local multiplayer
+                            </p>
+
+                            <small>
+                                1 VS 1
+                            </small>
+
+                        </div>
+
+                        <div class="mode-arrow">
+                            →
+                        </div>
+
+                    </button>
+
+
+                    <!-- 3 PLAYER -->
+
+                    <button
+                        class="mode-card"
+                        data-mode="3"
+                    >
+
+                        <div class="mode-icon">
+                            👥👤
+                        </div>
+
+                        <div class="mode-info">
+
+                            <h4>
+                                3 PLAYERS
+                            </h4>
+
+                            <p>
+                                Local multiplayer
+                            </p>
+
+                            <small>
+                                FREE FOR ALL
+                            </small>
+
+                        </div>
+
+                        <div class="mode-arrow">
+                            →
+                        </div>
+
+                    </button>
+
+
+                    <!-- 4 PLAYER -->
+
+                    <button
+                        class="mode-card"
+                        data-mode="4"
+                    >
+
+                        <div class="mode-icon">
+                            👥👥
+                        </div>
+
+                        <div class="mode-info">
+
+                            <h4>
+                                4 PLAYERS
+                            </h4>
+
+                            <p>
+                                Full Ludo battle
+                            </p>
+
+                            <small>
+                                FREE FOR ALL
+                            </small>
+
+                        </div>
+
+                        <div class="mode-arrow">
+                            →
+                        </div>
+
+                    </button>
+
+
+                    <!-- 2 VS 2 -->
+
+                    <button
+                        class="mode-card team-mode"
+                        data-mode="2v2"
+                    >
+
+                        <div class="mode-icon">
+                            ⚔️
+                        </div>
+
+                        <div class="mode-info">
+
+                            <h4>
+                                TEAM 2 VS 2
+                            </h4>
+
+                            <p>
+                                Team up with a partner
+                            </p>
+
+                            <small>
+                                TEAM BATTLE
+                            </small>
+
+                        </div>
+
+                        <div class="mode-arrow">
+                            →
+                        </div>
+
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- QUICK STATS -->
+
+            <section class="quick-stats">
+
+                <div class="stat-box">
+
+                    <span>🎮</span>
+
+                    <div>
+                        <small>GAMES</small>
+                        <strong id="homeGames">
+                            0
+                        </strong>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-box">
+
+                    <span>🏆</span>
+
+                    <div>
+                        <small>WINS</small>
+                        <strong id="homeWins">
+                            0
+                        </strong>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-box">
+
+                    <span>🔥</span>
+
+                    <div>
+                        <small>STREAK</small>
+                        <strong id="homeStreak">
+                            0
+                        </strong>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-box">
+
+                    <span>⭐</span>
+
+                    <div>
+                        <small>LEVEL</small>
+                        <strong id="homeLevel">
+                            1
+                        </strong>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- NAVIGATION -->
+
+            <section class="home-navigation">
+
+                <button
+                    class="nav-card"
+                    id="historyButton"
+                >
+
+                    <span>📜</span>
+
+                    <div>
+                        <strong>
+                            Match History
+                        </strong>
+
+                        <small>
+                            View your previous games
+                        </small>
+                    </div>
+
+                    <b>→</b>
+
+                </button>
+
+
+                <button
+                    class="nav-card"
+                    id="statsButton"
+                >
+
+                    <span>📊</span>
+
+                    <div>
+                        <strong>
+                            Statistics
+                        </strong>
+
+                        <small>
+                            See your Ludo performance
+                        </small>
+                    </div>
+
+                    <b>→</b>
+
+                </button>
+
+            </section>
+
+        </main>
+
+
+        <!-- FOOTER -->
+
+        <footer class="footer">
+
+            <strong>
+                SHUBHAM LUDO
+            </strong>
+
+            <span>
+                Built for fun • Built with code ❤️
+            </span>
+
+        </footer>
+
+    </section>
+
+
+
+    <!-- =================================================
+         PLAYER SETUP SCREEN
+    ================================================== -->
+
+    <section
+        id="setupScreen"
+        class="screen hidden"
+    >
+
+        <header class="sub-header">
+
+            <button
+                id="setupBackButton"
+                class="back-button"
+            >
+                ←
+            </button>
+
+            <div>
+                <span>GAME SETUP</span>
+                <h2 id="setupTitle">
+                    Players
+                </h2>
+            </div>
+
+        </header>
+
+
+        <main class="setup-content">
+
+
+            <!-- MODE INFO -->
+
+            <div class="selected-mode-card">
+
+                <div
+                    id="selectedModeIcon"
+                    class="selected-mode-icon"
+                >
+                    🎮
+                </div>
+
+                <div>
+
+                    <small>
+                        SELECTED MODE
+                    </small>
+
+                    <h3 id="selectedModeName">
+                        Ludo
+                    </h3>
+
+                </div>
+
+            </div>
+
+
+            <!-- PLAYER INPUTS -->
+
+            <div
+                id="playerInputs"
+                class="player-inputs"
+            >
+
+                <!-- JS WILL CREATE PLAYERS -->
+
+            </div>
+
+
+            <!-- TEAM MODE -->
+
+            <div
+                id="teamModeInfo"
+                class="team-info hidden"
+            >
+
+                <div class="team-title">
+                    ⚔️ TEAM BATTLE
+                </div>
+
+                <p>
+                    Players 1 & 3 are Team A.
+                    Players 2 & 4 are Team B.
+                </p>
+
+            </div>
+
+
+            <!-- HARD AI NOTICE -->
+
+            <div
+                id="aiNotice"
+                class="ai-notice hidden"
+            >
+
+                <span>🤖</span>
+
+                <div>
+
+                    <strong>
+                        SHUBHAM AI
+                    </strong>
+
+                    <p>
+                        Computer difficulty:
+                        <b>HARD</b>
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <button
+                id="startGameButton"
+                class="primary-button start-button"
+            >
+
+                <span>
+                    🎲 START GAME
+                </span>
+
+                <b>
+                    →
+                </b>
+
+            </button>
+
+        </main>
+
+    </section>
+
+
+
+    <!-- =================================================
+         GAME SCREEN
+    ================================================== -->
+
+    <section
+        id="gameScreen"
+        class="game-screen hidden"
+    >
+
+        <!-- GAME HEADER -->
+
+        <header class="game-header">
+
+            <button
+                id="gameBackButton"
+                class="game-control"
+            >
+                ←
+            </button>
+
+
+            <div class="game-title">
+
+                <span id="gameModeIcon">
+                    🎲
+                </span>
+
+                <div>
+
+                    <small>
+                        SHUBHAM LUDO
+                    </small>
+
+                    <h2 id="gameModeTitle">
+                        Ludo
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="game-header-actions">
+
+                <button
+                    id="gameSoundButton"
+                    class="game-control"
+                >
+                    🔊
+                </button>
+
+                <button
+                    id="pauseButton"
+                    class="game-control"
+                >
+                    ⏸️
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <!-- TURN INFO -->
+
+        <div class="turn-bar">
+
+            <div class="turn-player">
+
+                <div
+                    id="turnPlayerAvatar"
+                    class="turn-avatar"
+                >
+                    🔴
+                </div>
+
+                <div>
+
+                    <small>
+                        CURRENT TURN
+                    </small>
+
+                    <strong
+                        id="currentPlayerName"
+                    >
+                        Player 1
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="turn-timer">
+
+                <span>
+                    ⏱️
+                </span>
+
+                <strong id="turnTimer">
+                    30
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <!-- GAME BOARD AREA -->
+
+        <main class="game-area">
+
+
+            <!-- PLAYER TOP -->
+
+            <div
+                id="topPlayer"
+                class="board-player top-player"
+            >
+
+                <div
+                    class="player-color-dot red"
+                ></div>
+
+                <div>
+
+                    <strong id="topPlayerName">
+                        Player
+                    </strong>
+
+                    <small>
+                        🔴
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <!-- BOARD -->
+
+            <div
+                id="ludoBoard"
+                class="ludo-board"
+            >
+
+                <!--
+                    15 x 15 LUDO BOARD
+                    JS WILL CONTROL TOKENS
+                -->
+
+
+                <!-- TOP LEFT HOME -->
+
+                <div
+                    class="home-zone red-zone"
+                    data-zone="red"
+                >
+
+                    <div class="home-inner">
+
+                        <div
+                            class="home-token"
+                        ></div>
+
+                        <div
+                            class="home-token"
+                        ></div>
+
+                        <div
+                            class="home-token"
+                        ></div>
+
+                        <div
+                            class="home-token"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TOP RIGHT HOME -->
+
+                <div
+                    class="home-zone green-zone"
+                    data-zone="green"
+                >
+
+                    <div class="home-inner">
+
+                        <div
+                            class="home-token"
+                        ></div>
+
+                        <div
+                            class="home-token"
+                        ></div>
+
+                        <div
+                            class="home-token"
+                        ></div>
+
+                        <div
+                            class="home-token"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- BOTTOM LEFT HOME -->
+
+                <div
+                    class="home-zone blue-zone"
+                    data-zone="blue"
+                >
+
+                    <div class="home-inner">
+
+                        <div
+                            class="home-token"
+                        ></div>
+
+                        <div
+                            class="home-token"
+                        ></div>
+
+                        <div
+                            class="home-token"
+                        ></div>
+
+                        <div
+                            class="home-token"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- BOTTOM RIGHT HOME -->
+
+                <div
+                    class="home-zone yellow-zone"
+                    data-zone="yellow"
+                >
+
+                    <div class="home-inner">
+
+                        <div
+                            class="home-token"
+                        ></div>
+
+                        <div
+                            class="home-token"
+                        ></div>
+
+                        <div
+                            class="home-token"
+                        ></div>
+
+                        <div
+                            class="home-token"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CENTER -->
+
+                <div class="board-center">
+
+                    <div class="center-triangle red"></div>
+                    <div class="center-triangle green"></div>
+                    <div class="center-triangle blue"></div>
+                    <div class="center-triangle yellow"></div>
+
+                    <div class="center-star">
+                        ★
+                    </div>
+
+                </div>
+
+
+                <!-- PATH CELLS -->
+
+                <div
+                    id="boardCells"
+                    class="board-cells"
+                >
+
+                    <!--
+                        JavaScript will generate
+                        all playable cells.
+                    -->
+
+                </div>
+
+
+                <!-- TOKENS -->
+
+                <div
+                    id="tokenLayer"
+                    class="token-layer"
+                >
+
+                    <!-- JS WILL CREATE TOKENS -->
+
+                </div>
+
+            </div>
+
+
+            <!-- BOTTOM PLAYER -->
+
+            <div
+                id="bottomPlayer"
+                class="board-player bottom-player"
+            >
+
+                <div
+                    class="player-color-dot yellow"
+                ></div>
+
+                <div>
+
+                    <strong id="bottomPlayerName">
+                        Player
+                    </strong>
+
+                    <small>
+                        🟡
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <!-- SIDE PLAYERS -->
+
+            <div
+                id="leftPlayer"
+                class="board-player left-player"
+            >
+
+                <div
+                    class="player-color-dot blue"
+                ></div>
+
+                <div>
+
+                    <strong id="leftPlayerName">
+                        Player
+                    </strong>
+
+                    <small>
+                        🔵
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div
+                id="rightPlayer"
+                class="board-player right-player"
+            >
+
+                <div
+                    class="player-color-dot green"
+                ></div>
+
+                <div>
+
+                    <strong id="rightPlayerName">
+                        Player
+                    </strong>
+
+                    <small>
+                        🟢
+                    </small>
+
+                </div>
+
+            </div>
+
+        </main>
+
+
+        <!-- GAME CONTROLS -->
+
+        <div class="game-controls-panel">
+
+
+            <!-- DICE -->
+
+            <div class="dice-section">
+
+                <div
+                    id="dice"
+                    class="dice"
+                >
+                    1
+                </div>
+
+                <button
+                    id="rollDiceButton"
+                    class="roll-button"
+                >
+
+                    🎲
+                    <span>
+                        ROLL DICE
+                    </span>
+
+                </button>
+
+            </div>
+
+
+            <!-- MESSAGE -->
+
+            <div
+                id="gameMessage"
+                class="game-message"
+            >
+                Roll the dice to start.
+            </div>
+
+
+            <!-- MOVE HINT -->
+
+            <div
+                id="moveHint"
+                class="move-hint hidden"
+            >
+
+                <span>
+                    👆
+                </span>
+
+                <strong>
+                    Select a token to move
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <!-- SCORE BAR -->
+
+        <div class="game-score-bar">
+
+            <div>
+
+                <small>
+                    YOUR TOKENS HOME
+                </small>
+
+                <strong id="playerHomeCount">
+                    0 / 4
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <small>
+                    SCORE
+                </small>
+
+                <strong id="gameScore">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <small>
+                    CAPTURES
+                </small>
+
+                <strong id="captureCount">
+                    0
+                </strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         PAUSE MODAL
+    ================================================== -->
+
+    <div
+        id="pauseModal"
+        class="modal hidden"
+    >
+
+        <div class="modal-card">
+
+            <button
+                class="modal-close"
+                data-close="pauseModal"
+            >
+                ×
+            </button>
+
+            <div class="modal-icon">
+                ⏸️
+            </div>
+
+            <h2>
+                Game Paused
+            </h2>
+
+            <p>
+                Your current game is safe.
+            </p>
+
+
+            <button
+                id="resumeButton"
+                class="primary-button"
+            >
+                ▶️ Resume Game
+            </button>
+
+
+            <button
+                id="saveExitButton"
+                class="secondary-button"
+            >
+                💾 Save & Exit
+            </button>
+
+
+            <button
+                id="restartGameButton"
+                class="danger-button"
+            >
+                🔄 Restart Game
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =================================================
+         RESULT MODAL
+    ================================================== -->
+
+    <div
+        id="resultModal"
+        class="modal hidden"
+    >
+
+        <div class="modal-card result-card">
+
+            <div
+                id="resultIcon"
+                class="result-icon"
+            >
+                🏆
+            </div>
+
+            <span class="result-label">
+                GAME COMPLETE
+            </span>
+
+            <h2 id="winnerName">
+                Player Wins!
+            </h2>
+
+            <p id="winnerMessage">
+                Congratulations!
+            </p>
+
+
+            <div class="result-stats">
+
+                <div>
+
+                    <small>
+                        SCORE
+                    </small>
+
+                    <strong id="resultScore">
+                        0
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <small>
+                        CAPTURES
+                    </small>
+
+                    <strong id="resultCaptures">
+                        0
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <small>
+                        XP
+                    </small>
+
+                    <strong id="resultXP">
+                        +0
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <button
+                id="rematchButton"
+                class="primary-button"
+            >
+                🔄 Rematch
+            </button>
+
+
+            <button
+                id="resultHomeButton"
+                class="secondary-button"
+            >
+                🏠 Back to Home
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =================================================
+         SETTINGS MODAL
+    ================================================== -->
+
+    <div
+        id="settingsModal"
+        class="modal hidden"
+    >
+
+        <div class="modal-card">
+
+            <button
+                class="modal-close"
+                data-close="settingsModal"
+            >
+                ×
+            </button>
+
+            <div class="modal-icon">
+                ⚙️
+            </div>
+
+            <h2>
+                Settings
+            </h2>
+
+
+            <div class="settings-list">
+
+
+                <div class="setting-row">
+
+                    <div>
+
+                        <strong>
+                            Sound Effects
+                        </strong>
+
+                        <small>
+                            Dice, moves and wins
+                        </small>
+
+                    </div>
+
+                    <button
+                        id="settingsSoundToggle"
+                        class="toggle-button active"
+                    >
+                        ON
+                    </button>
+
+                </div>
+
+
+                <div class="setting-row">
+
+                    <div>
+
+                        <strong>
+                            Theme
+                        </strong>
+
+                        <small>
+                            Dark / Light
+                        </small>
+
+                    </div>
+
+                    <button
+                        id="settingsThemeToggle"
+                        class="toggle-button"
+                    >
+                        DARK
+                    </button>
+
+                </div>
+
+
+                <div class="setting-row">
+
+                    <div>
+
+                        <strong>
+                            Turn Timer
+                        </strong>
+
+                        <small>
+                            30 seconds per turn
+                        </small>
+
+                    </div>
+
+                    <span class="setting-value">
+                        30s
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =================================================
+         STATS MODAL
+    ================================================== -->
+
+    <div
+        id="statsModal"
+        class="modal hidden"
+    >
+
+        <div class="modal-card stats-modal">
+
+            <button
+                class="modal-close"
+                data-close="statsModal"
+            >
+                ×
+            </button>
+
+            <div class="modal-icon">
+                📊
+            </div>
+
+            <h2>
+                Statistics
+            </h2>
+
+
+            <div class="big-stats-grid">
+
+                <div>
+                    <span>
+                        🎮
+                    </span>
+
+                    <small>
+                        Games
+                    </small>
+
+                    <strong id="statGames">
+                        0
+                    </strong>
+                </div>
+
+
+                <div>
+                    <span>
+                        🏆
+                    </span>
+
+                    <small>
+                        Wins
+                    </small>
+
+                    <strong id="statWins">
+                        0
+                    </strong>
+                </div>
+
+
+                <div>
+                    <span>
+                        💔
+                    </span>
+
+                    <small>
+                        Losses
+                    </small>
+
+                    <strong id="statLosses">
+                        0
+                    </strong>
+                </div>
+
+
+                <div>
+                    <span>
+                        🔥
+                    </span>
+
+                    <small>
+                        Best Streak
+                    </small>
+
+                    <strong id="statBestStreak">
+                        0
+                    </strong>
+                </div>
+
+
+                <div>
+                    <span>
+                        🎯
+                    </span>
+
+                    <small>
+                        Captures
+                    </small>
+
+                    <strong id="statCaptures">
+                        0
+                    </strong>
+                </div>
+
+
+                <div>
+                    <span>
+                        ⭐
+                    </span>
+
+                    <small>
+                        Level
+                    </small>
+
+                    <strong id="statLevel">
+                        1
+                    </strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =================================================
+         HISTORY MODAL
+    ================================================== -->
+
+    <div
+        id="historyModal"
+        class="modal hidden"
+    >
+
+        <div class="modal-card history-modal">
+
+            <button
+                class="modal-close"
+                data-close="historyModal"
+            >
+                ×
+            </button>
+
+            <div class="modal-icon">
+                📜
+            </div>
+
+            <h2>
+                Match History
+            </h2>
+
+            <div
+                id="historyList"
+                class="history-list"
+            >
+
+                <div class="empty-history">
+
+                    <span>
+                        🎲
+                    </span>
+
+                    <p>
+                        No matches played yet.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =================================================
+         PROFILE / PLAYER DATA
+    ================================================== -->
+
+    <div
+        id="profileModal"
+        class="modal hidden"
+    >
+
+        <div class="modal-card">
+
+            <button
+                class="modal-close"
+                data-close="profileModal"
+            >
+                ×
+            </button>
+
+            <div class="profile-avatar">
+                👤
+            </div>
+
+            <span class="profile-label">
+                PLAYER PROFILE
+            </span>
+
+            <h2 id="profileName">
+                Shubham
+            </h2>
+
+
+            <div class="profile-level">
+
+                <div>
+
+                    <small>
+                        LEVEL
+                    </small>
+
+                    <strong id="profileLevel">
+                        1
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <small>
+                        XP
+                    </small>
+
+                    <strong id="profileXP">
+                        0
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="xp-bar">
+
+                <div
+                    id="profileXPBar"
+                    class="xp-progress"
+                ></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script src="script.js"></script>
+
+</body>
+              </html>
